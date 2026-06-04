@@ -169,6 +169,10 @@ a:hover{
     z-index: -1;
 }
 
+.seccion-sobre-mi{
+    flex-wrap: wrap;
+}
+
 @keyframes typing {
   from { width: 0 }
   to   { width: 13.5ch } /* ch = ancho de "0" en la fuente */
@@ -178,4 +182,16 @@ a:hover{
 @keyframes blink {
   0%, 100% { border-color: black }
   50%       { border-color: transparent }
+}
+
+@media screen and (max-width: 500px) {
+    
+    body{
+        font-size: 70%;
+    }
+
+    .seccion-sobre-mi{
+        flex-wrap: wrap;
+    }
+
 }
