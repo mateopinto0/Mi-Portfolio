@@ -19,7 +19,7 @@
             <a href="#sobre-mi" class="text-decoration-none">Sobre mí</a>
             <a href="#habilidades" class="text-decoration-none">Habilidades</a>
             <a href="#servicios" class="text-decoration-none">Servicios</a>
-            <a href="#contacto" class="text-decoration-none">Contacto</a>
+            <a href="#form-contacto" class="text-decoration-none">Contacto</a>
         </nav>
     </header>
 
@@ -28,7 +28,7 @@
             <h1 id="presentacion">Hola, soy Mateo Pinto.</h1>
             <p class="fs-4 animar">Full Stack Developer</p>
             <div class="d-flex gap-3 align-items-center justify-content-center">
-                <a href="#contacto" class="btn btn-primario">Contactar</a>
+                <a href="#form-contacto" class="btn btn-primario">Contactar</a>
                 <a href="./cv/cv.pdf" class="btn btn-secundario" download >Descargar CV</a>
             </div>
         </div>
@@ -153,7 +153,7 @@
                     </div>
                 </div>
                 <div class="card-footer border-0 bg-transparent pt-0">
-                    <a href="#contacto" class="btn btn-primario w-100">Consultar</a>
+                    <a href="#form-contacto" class="btn btn-primario w-100">Consultar</a>
                 </div>
             </div>
         </div>
@@ -180,7 +180,7 @@
                     </div>
                 </div>
                 <div class="card-footer border-0 bg-transparent pt-0">
-                    <a href="#contacto" class="btn btn-primario w-100">Consultar</a>
+                    <a href="#form-contacto" class="btn btn-primario w-100">Consultar</a>
                 </div>
             </div>
         </div>
@@ -207,12 +207,44 @@
                     </div>
                 </div>
                 <div class="card-footer border-0 bg-transparent pt-0">
-                    <a href="#contacto" class="btn btn-primario w-100">Consultar</a>
+                    <a href="#form-contacto" class="btn btn-primario w-100">Consultar</a>
                 </div>
             </div>
         </div>
 
     </div>
+</section>
+
+<section id="form-contacto" class="d-flex align-items-center justify-content-center p-4 flex-column">
+    <h3>Formulario de contacto</h3>
+    <form action="https://formsubmit.co/pintomateo74@gmail.com" method="POST" class="p-3">
+        <input type="hidden" name="_next" value="./vistas/gracias.html">
+       <input type="hidden" name="_captcha" value="false">
+        <div class="mb-3">
+    <label for="nombre" class="form-label">Nombre</label>
+    <div class="input-group">
+      <span class="input-group-text"><i class="bi bi-person"></i></span>
+      <input type="text" class="form-control element-form" id="nombre" name="name" placeholder="Tu nombre" required>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Correo Electrónico</label>
+    <div class="input-group">
+      <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+      <input type="email" class="form-control element-form" id="email" name="email" placeholder="nombre@correo.com" required>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="mensaje" class="form-label">Mensaje</label>
+    <textarea class="form-control element-form" id="mensaje" name="message" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primario w-100">
+    <i class="bi bi-send me-2"></i>Enviar mensaje
+  </button>
+    </form>
 </section>
 
    <footer id="contacto" class="d-flex justify-content-center align-items-center p-5 flex-column gap-4">

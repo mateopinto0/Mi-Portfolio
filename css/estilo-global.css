@@ -172,7 +172,17 @@ a:hover{
     width: 50%;
 }
 
+.element-form{
+    background-color: var(--color-fondo);
+}
 
+#form-contacto{
+    height: 100vh;
+}
+
+#form-contacto form{
+        width: 50%;
+    }
 @keyframes typing {
   from { width: 0 }
   to   { width: 13.5ch } /* ch = ancho de "0" en la fuente */
@@ -201,6 +211,9 @@ a:hover{
     .descripcion{
         width: 100%;
     }
+    #form-contacto form{
+        width: 90%;
+    }
 
 }
 
@@ -220,5 +233,8 @@ a:hover{
 
     .descripcion{
         width: 80%;
+    }
+    #form-contacto form{
+        width: 70%;
     }
 }
