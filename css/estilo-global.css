@@ -126,7 +126,7 @@ body{
     color: var(--color-primario);
 }
 #contacto{
-    border-top: 1px solid var(--color-primario);
+    background-color: var(--color-fondo);
 }
 
 a{
