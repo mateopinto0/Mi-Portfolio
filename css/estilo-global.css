@@ -1,3 +1,12 @@
+
+body{
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+.header{
+    width: 100%;
+}
+
 .container.general{
     width: 100%;
     height: 100vh;
@@ -8,7 +17,132 @@
 }
 header{
     width:100%;
+    z-index: 1000;
+}
+nav{
+    background-color: var(--color-fondo);
+box-shadow: 0 0 20px rgba(187, 184, 0, 0.6);
+}
+
+nav a{
+    color: var(--color-texto);
+    text-decoration: none;
+}
+nav a:hover{
+    color: var(--color-primario);
+    transition: 0.2ms;
 }
 body{
     margin:0;
+}
+#inicio{
+    height: 100vh;
+}
+#sobre-mi{
+    height: 100vh;
+}
+#habilidades{
+    height: 100vh;
+}
+
+
+.btn-primario{
+    background-color: var(--color-primario);
+    border: none;
+    color: var(--color-texto);
+}
+
+.btn-primario:hover{
+    background-color: var(--color-primario);
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.btn-secundario{
+    background-color: var(--color-secundario);
+    border: none;
+    color: var(--color-texto);
+}
+
+.btn-secundario:hover{
+    background-color: var(--color-secundario);
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+#presentacion{
+       overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid black; /* cursor */
+  width: 0;
+  animation:
+    typing 2.5s steps(28, end) forwards,
+    blink 0.75s step-end infinite;
+}
+
+.icono{
+    color: var(--color-primario);
+}
+
+/* Estado inicial: oculto */
+.animar {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Estado final: visible */
+.animar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Variante: aparece desde la izquierda */
+.animar-izq {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.animar-izq.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Variante: aparece desde la derecha */
+.animar-der {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.animar-der.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.redes{
+    font-size: 1.5rem;
+    color: var(--color-primario);
+}
+#contacto{
+    border-top: 1px solid var(--color-primario);
+}
+
+a{
+    color: var(--color-texto);
+}
+
+a:hover{
+    color: var(--color-primario);
+    transition: 0.2s;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to   { width: 18.5ch } /* ch = ancho de "0" en la fuente */
+}
+
+/* 3. blink: hace parpadear el cursor */
+@keyframes blink {
+  0%, 100% { border-color: black }
+  50%       { border-color: transparent }
 }
